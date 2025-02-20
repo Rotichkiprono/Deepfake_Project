@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDropzone } from "react-dropzone";
-import ".App.css";
+import "./App.css";
 import "./index.css";
 
 export default function DeepfakeDetector() {
