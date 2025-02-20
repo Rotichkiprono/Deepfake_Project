@@ -1,0 +1,114 @@
+/* Set the overall background color */
+body {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark text for readability */
+  font-family: Arial, sans-serif;
+}
+
+/* Center the main container */
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Container with white background */
+.container {
+  text-align: center;
+  padding: 2rem;
+  background: white; /* White container background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Dropzone styling */
+.dropzone {
+  border: 2px dashed #646cff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  cursor: pointer;
+  max-width: 400px;
+  background: #f1f3f5;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.dropzone:hover {
+  background: #e9ecef;
+}
+
+.dropzone p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Image preview */
+.preview {
+  margin-top: 1.5rem;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Loading text */
+.loading {
+  color: #ff9800;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Result text */
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Colors for real vs fake results */
+.real {
+  color: #28a745; /* Green for real images */
+}
+
+.fake {
+  color: #dc3545; /* Red for deepfake */
+}
+
+/* API response box */
+.result-box {
+  background: #f8f9fa; /* Light gray background */
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.result-box h2 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.result-box pre {
+  font-size: 0.9rem;
+  color: #555;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #ddd;
+}
