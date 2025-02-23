@@ -33,15 +33,17 @@ export default function DeepfakeDetector() {
         }
 
         const data = await response.json();
-        setApiResponse(data);
+        const { description } = data;
+        const fileName = file.name;
+        setApiResponse({ fileName, description });
 
-        if (data.description) {
-          if (data.description.includes("Deepfake Detected.")) {
+        if (description) {
+          if (description.includes("Deepfake Detected.")) {
             setResult("Deepfake detected");
-          } else if (data.description.includes("This is a real image")) {
+          } else if (description.includes("This is a real image")) {
             setResult("Image is real");
           } else {
-            setResult(`Uncertain result: ${data.description}`);
+            setResult(`Uncertain result: ${description}`);
           }
         } else {
           setResult("Unexpected API response.");
